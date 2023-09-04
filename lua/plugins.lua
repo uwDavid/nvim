@@ -3,6 +3,8 @@ return {
   'tpope/vim-fugitive',
   'tpope/vim-rhubarb',
 
+  'ThePrimeagen/harpoon',
+
   {'windwp/nvim-autopairs',
         event = "InsertEnter",
         dependencies = { 'hrsh7th/nvim-cmp'},
@@ -15,6 +17,15 @@ return {
     config = function()
       vim.cmd.colorscheme 'onedark'
     end,
+  },
+  
+  {
+    'nvim-tree/nvim-tree.lua', 
+    dependencies = {'nvim-tree/nvim-web-devicons'},
+    lazy = false,
+    config = function()
+      require("nvim-tree").setup{}
+    end
   },
 
   --  The configuration is done below. Search for lspconfig to find it below.
@@ -96,8 +107,6 @@ return {
     },
     build = ':TSUpdate',
   },
-
-  'ThePrimeagen/harpoon'
 
   -- NOTE: Next Step on Your Neovim Journey: Add/Configure additional "plugins" for kickstart
   --       These are some example plugins that I've included in the kickstart repository.
