@@ -3,7 +3,7 @@ return {
   'tpope/vim-fugitive',
   'tpope/vim-rhubarb',
 
-  'ThePrimeagen/harpoon',
+  -- 'ThePrimeagen/harpoon',
 
   {'windwp/nvim-autopairs',
         event = "InsertEnter",
@@ -60,6 +60,11 @@ return {
       -- Adds a number of user-friendly snippets
       'rafamadriz/friendly-snippets',
     },
+  },
+
+  {
+    'stevearc/conform.nvim',
+    opts = {},
   },
 
   -- Useful plugin to show you pending keybinds.
