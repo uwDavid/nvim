@@ -1,10 +1,10 @@
--- some key shortcut usage examples: 
+-- some key shortcut usage examples:
 -- space-s-f => search files
 -- :180 => jump to line 180
 -- gd => go to a func definition
 -- gr => look for ref where func is used
 --  - move up down in fzf with Ctrl N, P
---  :Telescope keymapse => see additional key short cuts 
+--  :Telescope keymapse => see additional key short cuts
 --
 -- Set <space> as the leader key
 -- See `:help mapleader`

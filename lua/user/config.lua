@@ -80,6 +80,7 @@ require('nvim-treesitter.configs').setup {
 -- [[ Configure Formatter]]
 require("conform").setup({
     formatters_by_ft = {
+      
         lua = { "stylua" },
         -- Conform will run multiple formatters sequentially
         python = { "isort", "black" },
@@ -132,7 +133,7 @@ nmap('<leader>ws', require('telescope.builtin').lsp_dynamic_workspace_symbols, '
 
 -- See `:help K` for why this keymap
 nmap('K', vim.lsp.buf.hover, 'Hover Documentation')
-nmap('<C-k>', vim.lsp.buf.signature_help, 'Signature Documentation')
+-- nmap('<C-k>', vim.lsp.buf.signature_help, 'Signature Documentation')
 
 -- Lesser used LSP functionality
 nmap('gD', vim.lsp.buf.declaration, '[G]oto [D]eclaration')
@@ -157,13 +158,13 @@ end
 --  define the property 'filetypes' to the map in question.
 local servers = {
 -- clangd = {},
-gopls = {},
-dockerls = {},
-jsonls = {},
-pyright = {},
+--gopls = {},
+--dockerls = {},
+--jsonls = {},
+--pyright = {},
 -- rust_analyzer = {},
-tsserver = {},
-sqlls = {},
+--tsserver = {},
+--sqlls = {},
 -- html = { filetypes = { 'html', 'twig', 'hbs'} },
 
 lua_ls = {
